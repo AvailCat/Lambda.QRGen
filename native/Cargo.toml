@@ -1,0 +1,20 @@
+[package]
+name = "rust_qr"
+version = "0.1.0"
+authors = ["Meeeeow <me@async.sh>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "rust_qr"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2"
+
+[dependencies]
+neon = "0.2"
+image="0.20"
+qrcode="0.9"
+base64="0.9"
